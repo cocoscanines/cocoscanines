@@ -11,22 +11,22 @@ Need an overnight stay instead? [Request boarding](../boarding/). First-time pup
 
 A relaxed 30-minute visit so we can meet your dog and answer questions before any booking.
 
-{{< cal-embed url="https://cal.com/cocoscanines/meet-and-greet-PLACEHOLDER" title="Meet & Greet" >}}
+{{< cal-embed url="https://cal.com/cocoscanines/meet-greet" title="Meet & Greet" >}}
 
 ## Daycare
 
 Full-day group play, **Mondays–Fridays only**. Drop-off 7–9am, pickup 4–6pm. One booking covers one day — for multiple days, book each date (we'll hold a standing spot for regulars).
 
-{{< cal-embed url="https://cal.com/cocoscanines/daycare-PLACEHOLDER" title="Daycare" height="760" >}}
+{{< cal-embed url="https://cal.com/cocoscanines/daycare" title="Daycare" height="760" >}}
 
 ## Walks
 
 Individual 30- or 60-minute walks in the neighborhood. Choose the length that fits your dog's day.
 
-{{< cal-embed url="https://cal.com/cocoscanines/walk-PLACEHOLDER" title="Walk" >}}
+{{< cal-embed url="https://cal.com/cocoscanines/walk" title="Walk" >}}
 
 ## Drop-In Visit
 
 A 30- or 60-minute midday visit — feeding, playtime, potty break, or meds with care. Same-day requests welcome when a slot is open.
 
-{{< cal-embed url="https://cal.com/cocoscanines/drop-in-PLACEHOLDER" title="Drop-In Visit" >}}
+{{< cal-embed url="https://cal.com/cocoscanines/drop-in-visit" title="Drop-In Visit" >}}
