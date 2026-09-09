@@ -15,3 +15,4 @@ markup:
 
 params:
   description: "Home-based doggie daycare, boarding & walking in Arlington & Marysville, WA. Over 10 years of loving care."
+  social_image: "/images/og-cover.jpg"

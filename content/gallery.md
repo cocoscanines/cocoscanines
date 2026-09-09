@@ -1,6 +1,7 @@
 ---
 title: "Gallery"
 description: "See the happy dogs of Coco's Canines in action. Photos from our daycare, boarding, and walking services in Arlington, WA."
+social_image: "/images/og-gallery.jpg"
 photos:
   - image: /images/gallery-01.jpg
     alt: Dogs wearing bandanas sitting together in the grass
