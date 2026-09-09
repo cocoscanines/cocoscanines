@@ -1,4 +1,9 @@
-baseURL: "https://StreamOfRon.github.io/cocoscanines/"
+# Deploy URL policy: no domain or path prefix is ever committed here.
+# CI injects the real base URL at build time (.github/workflows/deploy.yml):
+# during preview it derives the GitHub Pages project URL from the run context;
+# at go-live, set the SITE_URL repository variable to the apex domain.
+# "/" keeps plain local `hugo` / `hugo server` builds working.
+baseURL: /
 locale: en-us
 title: "Coco's Canines"
 pygmentsUseClasses: false

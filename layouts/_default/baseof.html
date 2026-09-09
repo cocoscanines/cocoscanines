@@ -2,6 +2,9 @@
 <html lang="{{ .Site.Language.Locale }}">
 <head>
   {{- partial "head.html" . -}}
+  {{- if .HasShortcode "gallery-grid" }}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3/dist/css/glightbox.min.css">
+  {{- end }}
 </head>
 <body>
   {{- partial "header.html" . -}}
@@ -9,5 +12,9 @@
     {{- block "main" . }}{{ end -}}
   </main>
   {{- partial "footer.html" . -}}
+  {{- if .HasShortcode "gallery-grid" }}
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3/dist/js/glightbox.min.js"></script>
+  <script>GLightbox({ selector: '.glightbox' });</script>
+  {{- end }}
 </body>
 </html>

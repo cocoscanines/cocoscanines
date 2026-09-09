@@ -26,8 +26,23 @@ jobs:
           hugo-version: 'latest'
           extended: true
       
+      # The site URL is never hard-coded in the repo. Preview builds derive the
+      # GitHub Pages project URL (domain + repo path prefix) from the run context.
+      # At go-live, set the SITE_URL repository variable to the apex domain and it
+      # takes over with no file changes.
+      - name: Resolve site URL
+        id: siteurl
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          if [ -n "$SITE_URL" ]; then
+            echo "url=${SITE_URL%/}/" >> "$GITHUB_OUTPUT"
+          else
+            echo "url=https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --baseURL "${{ steps.siteurl.outputs.url }}"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -9,7 +9,7 @@
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
-{{ with .Params.hero_image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+{{ with .Params.hero_image }}{{ $img := . }}{{ if hasPrefix $img "/" }}{{ $img = absURL (strings.TrimPrefix "/" $img) }}{{ end }}<meta property="og:image" content="{{ $img }}">{{ end }}
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">

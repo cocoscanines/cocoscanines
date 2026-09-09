@@ -9,7 +9,7 @@ Coco's Canines was founded by Nicole LaCount, who has spent over a decade caring
 
 We recently moved to a beautiful new property in Arlington with plenty of room for dogs to run and play in the Pacific Northwest. Our home-based setting means your dog stays in a real home environment, not a commercial kennel.
 
-<img src="/cocoscanines/images/about-facility.jpg" alt="Coco's Canines facility in Arlington, WA" style="width: 100%; max-width: 600px; border-radius: 12px; margin: 2rem 0;">
+{{< img "images/about-facility.jpg" "Coco's Canines facility in Arlington, WA" >}}
 
 ## Our Philosophy
 

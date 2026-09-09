@@ -1,0 +1,10 @@
+<div class="gallery-grid">
+{{- range .Page.Params.photos }}
+  {{- $url := .image | replaceRE "^.*/images/" "images/" | relURL }}
+  <div class="gallery-item">
+    <a class="glightbox" href="{{ $url }}" data-glightbox="description: {{ .alt }}">
+      <img src="{{ $url }}" alt="{{ .alt }}" loading="lazy">
+    </a>
+  </div>
+{{- end }}
+</div>

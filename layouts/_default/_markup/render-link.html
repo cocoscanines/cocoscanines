@@ -1,0 +1,5 @@
+{{/* Root-absolute markdown links (/page/) get re-anchored onto the current
+     deploy base; relative, anchor, and external links pass through. */}}
+{{ $dest := .Destination }}
+{{- if hasPrefix $dest "/" }}{{ $dest = (strings.TrimPrefix "/" $dest) | relURL }}{{ end }}
+<a href="{{ $dest }}" {{ with .Title }}title="{{ . }}"{{ end }}>{{ .Text }}</a>

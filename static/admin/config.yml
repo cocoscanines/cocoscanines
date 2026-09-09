@@ -1,12 +1,25 @@
 backend:
   name: github
-  repo: StreamOfRon/cocoscanines
+  repo: cocoscanines/cocoscanines
   branch: main
   base_url: "https://gh-oauth-proxy.ron-250.workers.dev"
   app_id: "Ov23li4N36XuKCkM1a75"
 
 media_folder: "static/images/uploads"
+# Apex-domain default; index.html overrides it at runtime with the value that
+# matches the actual deploy path prefix, so nothing here is environment-specific.
 public_folder: "/images/uploads"
+
+# Client-side processing of uploaded images (Decap >= 3.16): resize, convert
+# to JPEG, and strip EXIF/GPS metadata before committing to the repo.
+media_processing:
+  enabled: true
+  format:
+    enabled: true
+    default: jpeg
+  quality: 78
+  width: 1600
+  strip_metadata: true
 
 collections:
   - name: "pages"
@@ -41,6 +54,13 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "string"}
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Alt text", name: "alt", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "content/contact.md"
         name: "contact"

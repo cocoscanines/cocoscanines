@@ -7,6 +7,21 @@
     <title>Content Manager</title>
   </head>
   <body>
+    <script>
+      // No deploy domain or path prefix is hard-coded: the CMS derives them at
+      // runtime from wherever this page is actually served (works identically
+      // at /admin/ on the apex domain and /<preview-prefix>/admin/ on Pages).
+      window.CMS_MANUAL_INIT = true;
+    </script>
     <script type="module" src="https://unpkg.com/decap-cms@3/dist/decap-cms.js"></script>
+    <script type="module">
+      const basePath = location.pathname.replace(/\/admin\/?(index\.html)?$/, "");
+      window.CMS.init({
+        config: {
+          site_url: location.origin + basePath + "/",
+          public_folder: basePath + "/images/uploads",
+        },
+      });
+    </script>
   </body>
 </html>

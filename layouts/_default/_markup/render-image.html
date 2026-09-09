@@ -1,0 +1,7 @@
+{{/* Root-absolute markdown destinations (/images/...) carry no domain or path
+     prefix, so the CMS can store them identically for preview and go-live.
+     Re-anchor them onto the current deploy base at render time.
+     Relative, anchor, and external destinations pass through untouched. */}}
+{{ $dest := .Destination }}
+{{- if hasPrefix $dest "/" }}{{ $dest = (strings.TrimPrefix "/" $dest) | relURL }}{{ end }}
+<img src="{{ $dest }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }}>
