@@ -5,7 +5,7 @@ description: "Get in touch with Coco's Canines to ask a question about dog dayca
 
 Question about our services, our home, or whether we're a good fit for your dog? Send us a note below and we'll reply within 24 hours.
 
-{{< tally-embed url="https://tally.so/r/1AeyxL" title="Contact" height="650" >}}
+{{< tally-embed url="https://tally.so/r/1AeyxL" title="Contact" >}}
 
 {{< contact-info >}}
 

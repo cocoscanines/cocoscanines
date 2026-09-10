@@ -12,4 +12,4 @@ Overnight stays in our home, not a kennel. Boarding runs across a stretch of day
 
 Vaccination records are required before the first stay — complete the [new pup form](../new-pup/) if that hasn't happened yet.
 
-{{< tally-embed url="https://tally.so/r/GxG4jQ" title="Boarding Request" height="950" >}}
+{{< tally-embed url="https://tally.so/r/GxG4jQ" title="Boarding Request" >}}

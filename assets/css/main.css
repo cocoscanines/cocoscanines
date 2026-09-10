@@ -517,9 +517,22 @@ p {
 
 .embed-frame {
   display: block;
+  box-sizing: border-box;
+  width: 100%;
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--color-surface);
+}
+
+/* Tally forms render their own inputs; no white backing (pairs with transparentBackground=1) */
+.embed-narrow .embed-frame {
+  background: transparent;
+}
+
+.embed-narrow {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .embed-notice {
@@ -535,4 +548,5 @@ p {
   font-size: 0.9rem;
   color: var(--color-text-muted);
   text-align: center;
+  margin-bottom: var(--spacing-xs);
 }

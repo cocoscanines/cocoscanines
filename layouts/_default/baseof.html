@@ -16,5 +16,8 @@
   <script src="https://cdn.jsdelivr.net/npm/glightbox@3/dist/js/glightbox.min.js"></script>
   <script>GLightbox({ selector: '.glightbox' });</script>
   {{- end }}
+  {{- if .HasShortcode "tally-embed" }}
+  <script src="https://tally.so/widgets/embed.js" async></script>
+  {{- end }}
 </body>
 </html>

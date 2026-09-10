@@ -1,9 +1,9 @@
-{{ $url := .Get "url" }}{{ $title := .Get "title" | default "Booking" }}{{ $height := .Get "height" | default "700" }}{{ if and (not (in $url "PLACEHOLDER")) (not (in $url "embedable")) }}{{ $url = printf "%s%sembedable=true&embed=true" $url (cond (in $url "?") "&" "?") }}{{ end }}
+{{ $url := .Get "url" }}{{ $title := .Get "title" | default "Booking" }}{{ $height := .Get "height" | default "700" }}{{ if and (not (in $url "PLACEHOLDER")) (not (in $url "embedable")) }}{{ $url = printf "%s%sembedable=true&embed=true&theme=light" $url (cond (in $url "?") "&" "?") }}{{ end }}
 <div class="embed-block">
   {{- if in $url "PLACEHOLDER" }}
   <p class="embed-notice">Online booking for <strong>{{ $title }}</strong> is being set up. In the meantime, use the <a href="../contact/">contact form</a> to request it and we'll sort out a time by hand.</p>
   {{- else }}
-  <iframe class="embed-frame" src="{{ $url }}" title="{{ $title }} booking calendar" loading="lazy" style="width:100%;height:{{ $height }}px"></iframe>
+  <p class="embed-fallback"><a href="{{ $url }}" target="_blank" rel="noopener">Open {{ $title }} in a new tab</a> if the booking calendar doesn't appear below.</p>
+  <iframe class="embed-frame" src="{{ $url }}" title="{{ $title }} booking calendar" loading="lazy" height="{{ $height }}"></iframe>
   {{- end }}
-  <p class="embed-fallback"><a href="{{ $url }}" target="_blank" rel="noopener">Open {{ $title }} in a new tab</a> if the booking area doesn't appear.</p>
 </div>
