@@ -1,11 +1,9 @@
 phone: ""
-address: "Arlington / Marysville, WA"
-daycare_hours: "Monday–Friday, 7am–6pm"
-boarding_hours: "Drop-off by 5pm, pickup by 5pm next day"
+address: Arlington / Marysville, WA
+daycare_hours: "Monday–Friday: Dropoff 7-9am, Pickup 4-6pm "
+boarding_hours: "7 days a week "
 socials:
   - network: instagram
-    url: "https://www.instagram.com/cocoscanines/"
-  - network: threads
-    url: "https://www.threads.net/@cocoscanines"
+    url: https://www.instagram.com/cocoscanines/
   - network: facebook
-    url: "https://www.facebook.com/cocoscanines/"
+    url: https://www.facebook.com/cocoscanines/
