@@ -1,11 +1,8 @@
 ---
 title: Book
-description: Book a meet & greet, daycare day, walk, or drop-in visit with
-  Coco's Canines. Real availability, Monday through Friday, confirmed by us.
+description: "Request a meet & greet, daycare visit or boarding stay. "
 ---
-Everything on this page books against our actual calendar, **Monday–Friday only** — we don't run weekend daycare, walks, or drop-ins. Submit your preferred time, and once we approve it you'll get a confirmation email.
-
-Need an overnight stay instead? [Request boarding](../boarding/). First-time pup? Please complete the [new pup form](../new-pup/) before your first day.
+Use the calendars below to request a Meet & Greet, Daycare visit or Boarding stay. 
 
 ## Meet & Greet
 
