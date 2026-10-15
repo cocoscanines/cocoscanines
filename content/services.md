@@ -1,7 +1,7 @@
 ---
 title: Services
-description: Dog daycare, boarding, and walking services in Arlington and
-  Marysville, WA. Home-based care with over 10 years experience.
+description: Dog daycare and boarding services in Arlington, WA. Home-based care
+  with over 10 years experience.
 social_image: /images/og-services.jpg
 ---
 ## Daycare
